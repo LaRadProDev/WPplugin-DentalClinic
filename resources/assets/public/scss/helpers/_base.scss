@@ -1,0 +1,29 @@
+#pass-this-test {
+    max-width: 100% !important;
+    width: 100% !important;
+
+    .content {
+        margin-bottom: 30px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .link {
+        color: #133658;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 0;
+
+        span {
+            margin-left: 5px;
+        }
+    }
+
+    .question {
+        margin-bottom: 20px;
+    }
+}

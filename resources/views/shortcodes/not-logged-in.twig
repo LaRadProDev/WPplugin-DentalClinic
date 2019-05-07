@@ -1,0 +1,9 @@
+{% if not registration_uri and not login_uri %}
+    <p>Please add registration and login uri </p>
+{% else %}
+    <div id="pass-this-test">
+        <p>Please SignIn first</p>
+        <a href="{{ registration_uri }}">SignUp</a>
+        <a href="{{ login_uri }}">SignIn</a>
+    </div>
+{% endif %}

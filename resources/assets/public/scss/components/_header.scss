@@ -1,0 +1,52 @@
+.header {
+    flex-direction: column;
+    border-bottom: 2px solid $gray;
+    color: $secondary;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+
+    @include breakpoint($brkpoint--from-md) {
+        flex-direction: row;
+        padding-bottom: 0;
+    }
+
+    .heading {
+        min-height: unset;
+    }
+
+    .controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+
+        @include breakpoint($brkpoint--from-md) {
+            width: unset;
+        }
+
+        & > a {
+            color: white;
+            text-decoration: none !important;
+        }
+
+        a {
+            padding: 7px 15px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: 500;
+        }
+
+        .with-bg--secondary {
+            flex: 1;
+            margin-top: 25px;
+
+            @include breakpoint($brkpoint--from-md) {
+                margin-top: 0;
+            }
+        }
+    }
+}

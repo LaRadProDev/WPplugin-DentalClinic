@@ -1,0 +1,105 @@
+.questions-path {
+    padding: 30px 35px 20px;
+    text-align: center;
+    min-width: 200px;
+    margin-bottom: 35px;
+    position: relative;
+
+    & > span {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: 50;
+        display: block;
+        width: 100%;
+        height: 55px;
+        top: 100%;
+        left: 0;
+        background: linear-gradient(
+        rgba(255,255,255,0),
+        rgba(255,255,255,1)
+    );
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        margin-top: 20px;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 8px;
+            height: calc(100% + 40px);
+            background-color: $dark-gray;
+            left: 13px;
+            top: 30px;
+            z-index: 10;
+        }
+
+        
+
+        li {
+            position: relative;
+            padding: 8px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+
+            & > * {
+                position: relative;
+                z-index: 50;
+            }
+        }
+    }
+
+    .switch {
+        position: relative;
+        width: 34px;
+        height: 34px;
+        background-color: $primary;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        flex-shrink: 0;
+
+        
+        &::after {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background-color: $dark-gray;
+            border-radius: 50%;
+        }
+    }
+
+    .active {
+        color: $gray;
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 100%;
+            left: -50px;
+            right: -50px;
+            border-radius: 10px;
+            background: linear-gradient(to right, $primary, $secondary);
+        }
+
+        .switch {
+            background-color: $secondary;
+        }
+    }
+
+}

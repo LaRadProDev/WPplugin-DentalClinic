@@ -1,0 +1,6 @@
+<div class="control control--text">
+    {% if withLabel %}
+        <label for="{{ uuid }}">{{ name }}</label>
+    {% endif %}
+    <input id="{{ uuid }}" type="{{ type }}" name="{{ uuid }}" value="{{ value }}" {{ required ? 'required' : '' }}>
+</div>

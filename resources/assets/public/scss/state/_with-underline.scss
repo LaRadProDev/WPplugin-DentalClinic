@@ -1,0 +1,12 @@
+.with-underline {
+    &::after {
+        content: '';
+        position: relative;
+        display: block;
+        width: 94%;
+        height: 1px;
+        background-color: $secondary;
+        margin: 0 auto;
+        
+    }
+}

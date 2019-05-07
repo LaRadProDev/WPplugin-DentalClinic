@@ -1,0 +1,48 @@
+
+//------------------ Color Usage----------------
+
+$white      : #ffffff;
+$black      : #000000;
+$gray       : #ECE9E7;
+$dark-gray  : #8a8a8a;
+$green      : #25AE88;
+$red        : #D75A4A;
+
+$primary    : #1E646E;
+$secondary  : #133658;
+
+//------------------ Font Stacks----------------
+
+$font-family-regular  : 'MontserratRegular', Helvetica, Arial, sans-serif;
+$font-family-medium   : 'MontserratMedium', Helvetica, Arial, sans-serif;
+$font-family-semibold : 'MontserratSemiBold', Helvetica, Arial, sans-serif;
+
+//------------------ Font Weights----------------
+
+$font-weight--medium  : 400;
+$font-weight--regular : 500;
+$font-weight--bold    : 700;
+$font-weight--book    : 900;
+
+//------------------ Font Sizes----------------
+
+$font-size--tiny      : rem(8px);
+$font-size--x-light   : rem(9px);
+$font-size--light     : rem(12px);
+$font-size--base      : rem(18px);
+$font-size--medium    : rem(24px);
+$font-size--large     : rem(30px);
+$font-size--big       : rem(36px);
+
+//------------------ Transitions----------------
+
+$trns-duration        : .3s;
+
+//------------------ Magor Breakpoints----------------
+
+$brkpoint--from-x-sm     : 425px;
+$brkpoint--from-sm       : 500px;
+$brkpoint--from-md       : 768px;
+$brkpoint--from-x-lg     : 1024px;
+$brkpoint--from-xx-lg    : 1440px;
+$brkpoint--from-xxx-lg   : 1640px;

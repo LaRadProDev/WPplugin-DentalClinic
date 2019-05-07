@@ -1,0 +1,60 @@
+@include font-face("MontserratRegular", "../fonts/Montserrat-Regular", 400, normal, otf ttf eot);
+@include font-face("MontserratMedium", "../fonts/Montserrat-Medium", 500, normal, otf ttf eot);
+@include font-face("MontserratSemiBold", "../fonts/Montserrat-SemiBold", 600, normal, otf ttf eot);
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+#pass-this-test {
+    font-family: $font-family-regular;
+}
+
+.big, h3 {
+    font-family: $font-family-regular;
+    @include ftype(18px, 24px);
+    color: #133658;
+    font-weight: 400;
+
+    &:before {
+        content: none;
+    }
+}
+
+.question-list-item {
+    h4 {
+        font-family: $font-family-regular;
+    }
+}
+
+.small {
+    @include ftype(12px, 16px);
+    font-weight: 600;
+}
+
+.welcome h2 {
+    font-family: $font-family-regular;
+}
+
+.heading {
+    color: $secondary;
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+    font-family: $font-family-medium;
+    height: 100%;
+    padding: 4px 0;
+    font-weight: 400;
+}
+
+.heading--margin-bottom {
+    margin-bottom: 32px;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.middle, h4 {
+    @include ftype(16px, 20px);
+}

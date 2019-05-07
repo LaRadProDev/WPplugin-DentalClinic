@@ -1,0 +1,39 @@
+.x-selection {
+
+    p{
+        position: relative;
+        z-index: 5;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 500;
+
+        img {
+            width: 60px;
+            cursor: pointer;
+        }
+    }
+
+    ul {
+        padding: 20px 15px 0px;
+        position: relative;
+        z-index: 1;
+        transform: translateY(-40px);
+        margin: 0 !important;
+        list-style: none;
+        padding-top: 40px !important; 
+
+        li {
+            color: $primary;
+            padding: 15px 0;
+            font-size: 16px;
+            font-weight: 500;
+            border-bottom: 1px solid $dark-gray;
+            line-height: 1;
+            cursor: pointer;
+
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
+}

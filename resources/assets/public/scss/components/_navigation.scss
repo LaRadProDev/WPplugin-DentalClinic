@@ -1,0 +1,22 @@
+.navigation {
+    width: 100%;
+
+    @include breakpoint($brkpoint--from-md){
+        width: unset;
+    }
+
+    a {
+        padding: 10px 15px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none !important;
+        color: $secondary;
+    }
+
+    span {
+        margin: 0 10px;
+    }
+}

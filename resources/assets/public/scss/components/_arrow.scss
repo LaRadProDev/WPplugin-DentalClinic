@@ -1,0 +1,35 @@
+.arrow {
+    position: absolute;
+    right: 0;
+    
+    &:after, &:before {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 16px;
+        background-color: white;
+    }
+
+}
+
+.arrow--down {
+    &:after {
+        transform: rotate(-45deg);
+    }   
+    &:before {
+        position: relative;
+        left: 6px;
+        transform: rotate(45deg);
+    }
+}
+
+.arrow--up {
+    &:after {
+        transform: rotate(45deg);
+    }   
+    &:before {
+        position: relative;
+        left: 6px;
+        transform: rotate(-45deg);
+    }
+}

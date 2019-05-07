@@ -1,0 +1,22 @@
+.filter{
+
+    h3  {
+        justify-content: space-between;
+        font-size: 24px;
+        font-weight: 400;
+
+        span {
+            color: $primary;
+        }
+    }
+
+    .bar {
+        
+        span {
+            cursor: pointer;
+            flex: 1;
+            font-size: 16px;
+            font-weight: 500;
+        }
+    }
+}

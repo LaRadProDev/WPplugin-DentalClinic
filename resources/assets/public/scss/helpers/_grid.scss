@@ -1,0 +1,57 @@
+
+.container {
+    width: 100%;
+}
+
+.container--flex {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint($brkpoint--from-md) {
+        flex-direction: row;
+    }
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.align-center {
+    align-items: center
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.column {
+    width: 100%;
+
+    @include breakpoint($brkpoint--from-md) {
+        width: 48%;
+    }
+}
+
+.col-8 {
+    width: 100%;
+
+    @include breakpoint($brkpoint--from-md) {
+        width: 66%;
+    }
+}
+
+.col-4 {
+    width: 100%;
+
+    @include breakpoint($brkpoint--from-md) {
+        width: 28%;
+    }
+}

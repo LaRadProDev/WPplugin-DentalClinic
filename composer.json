@@ -1,0 +1,15 @@
+{
+    "require": {
+        "tareq1988/wp-eloquent": "dev-master",
+        "twig/twig": "^2.0"
+    },
+    "autoload" : {
+        "psr-4" : {
+          "PassThisTest\\": "src/"
+        },
+        "files": ["utils/functions.php"]
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.2"
+    }
+}

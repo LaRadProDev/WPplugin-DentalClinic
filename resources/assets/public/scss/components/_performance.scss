@@ -1,0 +1,81 @@
+.performance {
+
+    .with-underline{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .bar {
+        margin-bottom: 35px;
+
+        span {
+            width: 40%;
+        }
+    }
+
+    .score {
+        padding: 0 30px;
+        color: $secondary;
+        display: flex;
+        margin-bottom: 35px;
+        justify-content: space-between;
+
+        .text {
+            padding: 35px 0;
+            line-height: 1.3;
+            font-weight: 400;
+        }
+
+        .bigger {
+            @include ftype(32px, 48px);
+            font-weight: 400;
+
+            span {
+                line-height: 1;
+                bottom: 0;
+            }
+        }
+
+        .sector {
+            font-family: $font-family-semibold;
+            width: 75%;
+            max-width: 350px;
+            padding-top: 30%;
+            margin: 20px 0;
+            position: relative;
+            overflow: hidden;
+            background-size: 100%;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-image: url('../img/bow.svg');
+
+            span {
+                position: absolute;
+                bottom: 0%;
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    }
+
+    .rank {
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+
+        .img {
+            flex-shrink: 0;
+            flex-grow: 1;
+            height: 160px;
+            margin: 20px 0;
+        }
+
+        .text {
+            max-width: 350px;
+            margin-left: 30px;
+            line-height: 1.3;
+        }
+    }
+}

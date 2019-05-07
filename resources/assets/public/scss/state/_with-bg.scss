@@ -1,0 +1,23 @@
+.with-bg {
+    border-radius: 20px;
+}
+
+.with-bg--primary {
+    background-color: $primary;
+    color: $white;
+}
+
+.with-bg--secondary {
+    background-color: $secondary;
+    color: $white;
+}
+
+.with-bg--gray {
+    background-color: $gray;
+    color: $secondary;
+}
+
+.with-bg--gradient {
+    color: $white;
+    background: linear-gradient(to right, $primary, $secondary);
+}

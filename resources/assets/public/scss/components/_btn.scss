@@ -1,0 +1,30 @@
+.btn {
+    display: block;
+    color: white !important;
+    text-decoration: none !important;
+    font-weight: 400;
+    background-color: $primary;
+    margin-left: -5px;
+    margin-right: -5px;
+    text-align: center;
+    border-radius: 20px;
+    @include ftype(18px, 24px);
+    padding: 1px;
+}
+
+.btn--sec {
+    font-size: 20px;
+    padding: 13px 40px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    border: none !important;
+}
+
+.btn--sec[disabled="disabled"] {
+    cursor: default;
+    background-color: #ccc;
+}
+
+.btn-wrapper {
+    margin-right: 76px;
+}
